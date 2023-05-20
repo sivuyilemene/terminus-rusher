@@ -448,6 +448,78 @@
         "name": "assets\\Run2.png",
         "smoothed": false,
         "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Run Left.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Run Left.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Run Left2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Run Left2.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Run Up2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Run Up2.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Run Down2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Run Down2.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Ana.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Ana.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Health Bar.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Health Bar.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Health Bar Box.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Health Bar Box.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/previews/0.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\previews\\0.png",
+        "smoothed": false,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
@@ -476,7 +548,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.7370816317994028,
+        "zoomFactor": 0.7619362677197629,
         "windowMask": false
       },
       "objectsGroups": [],
@@ -505,8 +577,8 @@
           "name": "Ana",
           "persistentUuid": "512fb529-8e16-4266-a992-1673882b340f",
           "width": 94,
-          "x": 619,
-          "y": 547,
+          "x": 623,
+          "y": 518,
           "zOrder": 16,
           "numberProperties": [],
           "stringProperties": [],
@@ -520,8 +592,8 @@
           "name": "Banana",
           "persistentUuid": "f36975b9-0bc0-4fca-bab1-19d7582c5ade",
           "width": 38,
-          "x": 859,
-          "y": 374,
+          "x": 872,
+          "y": 322,
           "zOrder": 11,
           "numberProperties": [],
           "stringProperties": [],
@@ -535,8 +607,8 @@
           "name": "Apple",
           "persistentUuid": "64f1cea1-be4d-4d1a-8e71-7424834aae24",
           "width": 43,
-          "x": 400,
-          "y": 352,
+          "x": 418,
+          "y": 319,
           "zOrder": 15,
           "numberProperties": [],
           "stringProperties": [],
@@ -550,9 +622,69 @@
           "name": "Player",
           "persistentUuid": "fcc6170e-0dd3-468b-a452-185cbc60bcd7",
           "width": 0,
-          "x": 632,
-          "y": 328,
+          "x": 633,
+          "y": 267,
           "zOrder": 10,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 52,
+          "layer": "",
+          "name": "HealthBarBox",
+          "persistentUuid": "b5d33c34-737c-4eed-900e-695791a81475",
+          "width": 114,
+          "x": 614,
+          "y": 661,
+          "zOrder": 17,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 30,
+          "layer": "",
+          "name": "HealthBar",
+          "persistentUuid": "d2e5aa13-7705-4c98-b305-b3e123b09885",
+          "width": 90,
+          "x": 626,
+          "y": 672,
+          "zOrder": 18,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "Text1",
+          "persistentUuid": "8a7a17e3-bcad-41bf-9b73-045ef081c1a3",
+          "width": 0,
+          "x": 1158,
+          "y": 624,
+          "zOrder": 19,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "Robber",
+          "persistentUuid": "357c87fb-a593-4950-8ce5-9bf67f7ce5b5",
+          "width": 0,
+          "x": 179,
+          "y": 342,
+          "zOrder": 20,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -613,6 +745,12 @@
               "name": "currentHoldingObject",
               "type": "string",
               "value": ""
+            },
+            {
+              "folded": true,
+              "name": "Time",
+              "type": "number",
+              "value": 30
             }
           ],
           "effects": [
@@ -682,7 +820,7 @@
                   "sprites": [
                     {
                       "hasCustomCollisionMask": false,
-                      "image": "assets\\Run4.png",
+                      "image": "assets\\Run.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -699,7 +837,7 @@
                     },
                     {
                       "hasCustomCollisionMask": false,
-                      "image": "Run5",
+                      "image": "assets\\Run2.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -728,7 +866,7 @@
                   "sprites": [
                     {
                       "hasCustomCollisionMask": false,
-                      "image": "assets\\Run.png",
+                      "image": "assets\\Run Left.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -745,7 +883,7 @@
                     },
                     {
                       "hasCustomCollisionMask": false,
-                      "image": "assets\\Run3.png",
+                      "image": "assets\\Run Left2.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -775,7 +913,7 @@
                   "sprites": [
                     {
                       "hasCustomCollisionMask": false,
-                      "image": "assets\\Run Down.png",
+                      "image": "assets\\Run Up.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -792,7 +930,7 @@
                     },
                     {
                       "hasCustomCollisionMask": false,
-                      "image": "Run Down2",
+                      "image": "assets\\Run Up2.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -822,7 +960,7 @@
                   "sprites": [
                     {
                       "hasCustomCollisionMask": false,
-                      "image": "assets\\Run Up.png",
+                      "image": "assets\\Run Down.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -839,7 +977,7 @@
                     },
                     {
                       "hasCustomCollisionMask": false,
-                      "image": "Run Up2",
+                      "image": "assets\\Run Down2.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -958,10 +1096,21 @@
               "value": "banana"
             },
             {
+              "name": "Health",
+              "type": "number",
+              "value": 25
+            },
+            {
               "folded": true,
-              "name": "AngerRate",
-              "type": "string",
-              "value": "1"
+              "name": "MaximumHealth",
+              "type": "number",
+              "value": 25
+            },
+            {
+              "folded": true,
+              "name": "Time",
+              "type": "number",
+              "value": 10
             }
           ],
           "effects": [],
@@ -978,7 +1127,188 @@
                   "sprites": [
                     {
                       "hasCustomCollisionMask": false,
-                      "image": "Ana2",
+                      "image": "assets\\Ana.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "assetStoreId": "",
+          "name": "HealthBar",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "assets\\Health Bar.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "assetStoreId": "",
+          "name": "HealthBarBox",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "assets\\Health Bar Box.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "assetStoreId": "",
+          "bold": false,
+          "italic": false,
+          "name": "Text1",
+          "smoothed": true,
+          "tags": "",
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "string": "30",
+          "font": "",
+          "textAlignment": "left",
+          "characterSize": 60,
+          "color": {
+            "b": 0,
+            "g": 0,
+            "r": 0
+          }
+        },
+        {
+          "assetStoreId": "",
+          "name": "Robber",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [
+            {
+              "folded": true,
+              "name": "Speed",
+              "type": "number",
+              "value": 0
+            },
+            {
+              "folded": true,
+              "name": "StartX",
+              "type": "number",
+              "value": 50
+            },
+            {
+              "folded": true,
+              "name": "StartY",
+              "type": "number",
+              "value": 50
+            }
+          ],
+          "effects": [],
+          "behaviors": [
+            {
+              "acceleration": 130,
+              "allowDiagonals": true,
+              "angleOffset": 0,
+              "angularMaxSpeed": 180,
+              "cellHeight": 20,
+              "cellWidth": 20,
+              "extraBorder": 0,
+              "gridOffsetX": 0,
+              "gridOffsetY": 0,
+              "maxSpeed": 130,
+              "name": "Pathfinding",
+              "rotateObject": false,
+              "smoothingMaxCellGap": 1,
+              "type": "PathfindingBehavior::PathfindingBehavior"
+            }
+          ],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "assets\\Ana.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -1001,6 +1331,54 @@
         }
       ],
       "events": [
+        {
+          "type": "BuiltinCommonInstructions::Comment",
+          "color": {
+            "b": 109,
+            "g": 230,
+            "r": 255,
+            "textB": 0,
+            "textG": 0,
+            "textR": 0
+          },
+          "comment": "Timer"
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "DepartScene"
+              },
+              "parameters": [
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "ResetObjectTimer"
+              },
+              "parameters": [
+                "Player",
+                "\"Deadline\""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Comment",
+          "color": {
+            "b": 109,
+            "g": 230,
+            "r": 255,
+            "textB": 0,
+            "textG": 0,
+            "textR": 0
+          },
+          "comment": "Player movement"
+        },
         {
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
@@ -1304,6 +1682,215 @@
               ]
             }
           ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Comment",
+          "color": {
+            "b": 109,
+            "g": 230,
+            "r": 255,
+            "textB": 0,
+            "textG": 0,
+            "textR": 0
+          },
+          "comment": "Healthbar"
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::And"
+              },
+              "parameters": [],
+              "subInstructions": [
+                {
+                  "type": {
+                    "value": "CompareObjectTimer"
+                  },
+                  "parameters": [
+                    "Player",
+                    "\"Deadline\"",
+                    ">",
+                    "1"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "VarObjet"
+                  },
+                  "parameters": [
+                    "Player",
+                    "Time",
+                    ">",
+                    "-1"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Width"
+                  },
+                  "parameters": [
+                    "HealthBar",
+                    ">",
+                    "-1"
+                  ]
+                }
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "TextObject::String"
+              },
+              "parameters": [
+                "Text1",
+                "=",
+                "ToString(Player.Variable(Time))"
+              ]
+            },
+            {
+              "type": {
+                "value": "ResetObjectTimer"
+              },
+              "parameters": [
+                "Player",
+                "\"Deadline\""
+              ]
+            },
+            {
+              "type": {
+                "value": "ModVarObjet"
+              },
+              "parameters": [
+                "Player",
+                "Time",
+                "-",
+                "1"
+              ]
+            },
+            {
+              "type": {
+                "value": "ChangeWidth"
+              },
+              "parameters": [
+                "HealthBar",
+                "=",
+                "(((Player.Variable(Time) -1))/(10))*30"
+              ]
+            },
+            {
+              "type": {
+                "value": "ModVarObjet"
+              },
+              "parameters": [
+                "Ana",
+                "Health",
+                "-",
+                "1"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Comment",
+          "color": {
+            "b": 109,
+            "g": 230,
+            "r": 255,
+            "textB": 0,
+            "textG": 0,
+            "textR": 0
+          },
+          "comment": "Robber"
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::CompareNumbers"
+              },
+              "parameters": [
+                "Robber.Variable(Speed)",
+                "=",
+                "0"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "PathfindingBehavior::SetDestination"
+              },
+              "parameters": [
+                "Robber",
+                "Pathfinding",
+                "",
+                "Player.PointX(\"x\")",
+                "Player.PointY(\"y\")"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "Robber",
+                "Player",
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Delete"
+              },
+              "parameters": [
+                "Robber",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "TopDownMovementBehavior::MaxSpeed"
+              },
+              "parameters": [
+                "Player",
+                "TopDownMovement",
+                "=",
+                "15"
+              ]
+            },
+            {
+              "type": {
+                "value": "Wait"
+              },
+              "parameters": [
+                "2"
+              ]
+            },
+            {
+              "type": {
+                "value": "TopDownMovementBehavior::MaxSpeed"
+              },
+              "parameters": [
+                "Player",
+                "TopDownMovement",
+                "=",
+                "200"
+              ]
+            }
+          ]
         }
       ],
       "layers": [
@@ -1336,6 +1923,10 @@
         }
       ],
       "behaviorsSharedData": [
+        {
+          "name": "Pathfinding",
+          "type": "PathfindingBehavior::PathfindingBehavior"
+        },
         {
           "name": "TopDownMovement",
           "type": "TopDownMovementBehavior::TopDownMovementBehavior"
