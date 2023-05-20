@@ -520,6 +520,24 @@
         "name": "assets\\previews\\0.png",
         "smoothed": false,
         "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Blank Emote Left.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Blank Emote Left.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/SpawnPoint.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\SpawnPoint.png",
+        "smoothed": false,
+        "userAdded": true
       }
     ],
     "resourceFolders": []
@@ -562,7 +580,7 @@
           "name": "Floor",
           "persistentUuid": "f112c4c2-b4e8-446a-b0cc-9881f1742010",
           "width": 1296,
-          "x": -7,
+          "x": -11,
           "y": -5,
           "zOrder": 1,
           "numberProperties": [],
@@ -685,6 +703,36 @@
           "x": 179,
           "y": 342,
           "zOrder": 20,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 80,
+          "layer": "",
+          "name": "BlankEmoteLeft",
+          "persistentUuid": "f9d80e62-c402-4b5e-8e23-4933d688dc20",
+          "width": 133,
+          "x": 704,
+          "y": 491,
+          "zOrder": 21,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "SpawnPoint",
+          "persistentUuid": "05084b0d-c1dc-4e7b-903f-38d452f77536",
+          "width": 0,
+          "x": 754,
+          "y": 498,
+          "zOrder": 22,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -1328,6 +1376,95 @@
               ]
             }
           ]
+        },
+        {
+          "assetStoreId": "",
+          "name": "BlankEmoteLeft",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "assets\\Blank Emote Left.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "assetStoreId": "",
+          "name": "SpawnPoint",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [
+            {
+              "folded": true,
+              "name": "Spawner",
+              "type": "number",
+              "value": 0
+            }
+          ],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "assets\\SpawnPoint.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
         }
       ],
       "events": [
@@ -1363,6 +1500,117 @@
               "parameters": [
                 "Player",
                 "\"Deadline\""
+              ]
+            },
+            {
+              "type": {
+                "value": "ModVarObjet"
+              },
+              "parameters": [
+                "SpawnPoint",
+                "Spawner",
+                "=",
+                "RandomInRange(1,2)"
+              ]
+            }
+          ],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "VarObjet"
+                  },
+                  "parameters": [
+                    "SpawnPoint",
+                    "Spawner",
+                    "=",
+                    "1"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Create"
+                  },
+                  "parameters": [
+                    "",
+                    "Apple",
+                    "SpawnPoint.X()",
+                    "SpawnPoint.Y()",
+                    "\" \""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetSize"
+                  },
+                  "parameters": [
+                    "Apple",
+                    "35",
+                    "35"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Delete"
+                  },
+                  "parameters": [
+                    "SpawnPoint",
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "VarObjet"
+                  },
+                  "parameters": [
+                    "SpawnPoint",
+                    "Spawner",
+                    "=",
+                    "2"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Create"
+                  },
+                  "parameters": [
+                    "",
+                    "Banana",
+                    "SpawnPoint.X()",
+                    "SpawnPoint.Y()",
+                    "\" \""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetSize"
+                  },
+                  "parameters": [
+                    "Banana",
+                    "35",
+                    "35"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Delete"
+                  },
+                  "parameters": [
+                    "SpawnPoint",
+                    ""
+                  ]
+                }
               ]
             }
           ]
