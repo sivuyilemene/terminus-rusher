@@ -538,6 +538,78 @@
         "name": "assets\\SpawnPoint.png",
         "smoothed": false,
         "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/New Characters/Townfolk-Adult-M.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\New Characters\\Townfolk-Adult-M.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/assets_New Characters_Townfolk-Adult-M.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "assets\\New Characters\\Townfolk-Adult-M",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/assets_New Characters_Townfolk-Adult-M2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "assets\\New Characters\\Townfolk-Adult-M2",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/assets_New Characters_Townfolk-Adult-M3.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "assets\\New Characters\\Townfolk-Adult-M3",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/assets_New Characters_Townfolk-Adult-M.png",
+        "kind": "image",
+        "metadata": "{\"localFilePath\":\"assets/assets_New Characters_Townfolk-Adult-M.png\",\"extension\":\".png\"}",
+        "name": "assets\\assets_New Characters_Townfolk-Adult-M.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/assets_New Characters_Townfolk-Adult-M3.png",
+        "kind": "image",
+        "metadata": "{\"localFilePath\":\"assets/assets_New Characters_Townfolk-Adult-M3.png\",\"extension\":\".png\"}",
+        "name": "assets\\assets_New Characters_Townfolk-Adult-M3.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Chasing Left.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Chasing Left",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Chasing Left2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Chasing Left2",
+        "smoothed": false,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
@@ -682,27 +754,12 @@
           "customSize": false,
           "height": 0,
           "layer": "",
-          "name": "Text1",
+          "name": "RoundTimer",
           "persistentUuid": "8a7a17e3-bcad-41bf-9b73-045ef081c1a3",
           "width": 0,
           "x": 1158,
           "y": 624,
           "zOrder": 19,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "layer": "",
-          "name": "Robber",
-          "persistentUuid": "357c87fb-a593-4950-8ce5-9bf67f7ce5b5",
-          "width": 0,
-          "x": 179,
-          "y": 342,
-          "zOrder": 20,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -733,6 +790,21 @@
           "x": 754,
           "y": 498,
           "zOrder": 22,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 96,
+          "layer": "",
+          "name": "Robber",
+          "persistentUuid": "ca584ff9-8da9-434a-a9a2-94b55dbfb8a2",
+          "width": 97,
+          "x": 21,
+          "y": 20,
+          "zOrder": 23,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -792,7 +864,7 @@
               "folded": true,
               "name": "currentHoldingObject",
               "type": "string",
-              "value": ""
+              "value": "Nothing"
             },
             {
               "folded": true,
@@ -837,7 +909,7 @@
                   "timeBetweenFrames": 0.1,
                   "sprites": [
                     {
-                      "hasCustomCollisionMask": false,
+                      "hasCustomCollisionMask": true,
                       "image": "assets\\Idle.png",
                       "points": [],
                       "originPoint": {
@@ -851,7 +923,26 @@
                         "x": 0,
                         "y": 0
                       },
-                      "customCollisionMask": []
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 18,
+                            "y": 16
+                          },
+                          {
+                            "x": 66,
+                            "y": 16
+                          },
+                          {
+                            "x": 66,
+                            "y": 120
+                          },
+                          {
+                            "x": 18,
+                            "y": 120
+                          }
+                        ]
+                      ]
                     }
                   ]
                 }
@@ -867,7 +958,7 @@
                   "timeBetweenFrames": 0.1,
                   "sprites": [
                     {
-                      "hasCustomCollisionMask": false,
+                      "hasCustomCollisionMask": true,
                       "image": "assets\\Run.png",
                       "points": [],
                       "originPoint": {
@@ -881,10 +972,29 @@
                         "x": 0,
                         "y": 0
                       },
-                      "customCollisionMask": []
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 18,
+                            "y": 16
+                          },
+                          {
+                            "x": 66,
+                            "y": 16
+                          },
+                          {
+                            "x": 66,
+                            "y": 120
+                          },
+                          {
+                            "x": 18,
+                            "y": 120
+                          }
+                        ]
+                      ]
                     },
                     {
-                      "hasCustomCollisionMask": false,
+                      "hasCustomCollisionMask": true,
                       "image": "assets\\Run2.png",
                       "points": [],
                       "originPoint": {
@@ -898,7 +1008,26 @@
                         "x": 0,
                         "y": 0
                       },
-                      "customCollisionMask": []
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 18,
+                            "y": 16
+                          },
+                          {
+                            "x": 66,
+                            "y": 16
+                          },
+                          {
+                            "x": 66,
+                            "y": 120
+                          },
+                          {
+                            "x": 18,
+                            "y": 120
+                          }
+                        ]
+                      ]
                     }
                   ]
                 }
@@ -913,7 +1042,7 @@
                   "timeBetweenFrames": 0.1,
                   "sprites": [
                     {
-                      "hasCustomCollisionMask": false,
+                      "hasCustomCollisionMask": true,
                       "image": "assets\\Run Left.png",
                       "points": [],
                       "originPoint": {
@@ -927,10 +1056,29 @@
                         "x": 0,
                         "y": 0
                       },
-                      "customCollisionMask": []
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 18,
+                            "y": 16
+                          },
+                          {
+                            "x": 66,
+                            "y": 16
+                          },
+                          {
+                            "x": 66,
+                            "y": 120
+                          },
+                          {
+                            "x": 18,
+                            "y": 120
+                          }
+                        ]
+                      ]
                     },
                     {
-                      "hasCustomCollisionMask": false,
+                      "hasCustomCollisionMask": true,
                       "image": "assets\\Run Left2.png",
                       "points": [],
                       "originPoint": {
@@ -944,7 +1092,26 @@
                         "x": 0,
                         "y": 0
                       },
-                      "customCollisionMask": []
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 18,
+                            "y": 16
+                          },
+                          {
+                            "x": 66,
+                            "y": 16
+                          },
+                          {
+                            "x": 66,
+                            "y": 120
+                          },
+                          {
+                            "x": 18,
+                            "y": 120
+                          }
+                        ]
+                      ]
                     }
                   ]
                 }
@@ -960,7 +1127,7 @@
                   "timeBetweenFrames": 0.1,
                   "sprites": [
                     {
-                      "hasCustomCollisionMask": false,
+                      "hasCustomCollisionMask": true,
                       "image": "assets\\Run Up.png",
                       "points": [],
                       "originPoint": {
@@ -974,10 +1141,29 @@
                         "x": 0,
                         "y": 0
                       },
-                      "customCollisionMask": []
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 18,
+                            "y": 16
+                          },
+                          {
+                            "x": 66,
+                            "y": 16
+                          },
+                          {
+                            "x": 66,
+                            "y": 120
+                          },
+                          {
+                            "x": 18,
+                            "y": 120
+                          }
+                        ]
+                      ]
                     },
                     {
-                      "hasCustomCollisionMask": false,
+                      "hasCustomCollisionMask": true,
                       "image": "assets\\Run Up2.png",
                       "points": [],
                       "originPoint": {
@@ -991,7 +1177,26 @@
                         "x": 0,
                         "y": 0
                       },
-                      "customCollisionMask": []
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 18,
+                            "y": 16
+                          },
+                          {
+                            "x": 66,
+                            "y": 16
+                          },
+                          {
+                            "x": 66,
+                            "y": 120
+                          },
+                          {
+                            "x": 18,
+                            "y": 120
+                          }
+                        ]
+                      ]
                     }
                   ]
                 }
@@ -1007,7 +1212,7 @@
                   "timeBetweenFrames": 0.1,
                   "sprites": [
                     {
-                      "hasCustomCollisionMask": false,
+                      "hasCustomCollisionMask": true,
                       "image": "assets\\Run Down.png",
                       "points": [],
                       "originPoint": {
@@ -1021,10 +1226,29 @@
                         "x": 0,
                         "y": 0
                       },
-                      "customCollisionMask": []
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 18,
+                            "y": 16
+                          },
+                          {
+                            "x": 66,
+                            "y": 16
+                          },
+                          {
+                            "x": 66,
+                            "y": 120
+                          },
+                          {
+                            "x": 18,
+                            "y": 120
+                          }
+                        ]
+                      ]
                     },
                     {
-                      "hasCustomCollisionMask": false,
+                      "hasCustomCollisionMask": true,
                       "image": "assets\\Run Down2.png",
                       "points": [],
                       "originPoint": {
@@ -1038,7 +1262,26 @@
                         "x": 0,
                         "y": 0
                       },
-                      "customCollisionMask": []
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 18,
+                            "y": 16
+                          },
+                          {
+                            "x": 66,
+                            "y": 16
+                          },
+                          {
+                            "x": 66,
+                            "y": 120
+                          },
+                          {
+                            "x": 18,
+                            "y": 120
+                          }
+                        ]
+                      ]
                     }
                   ]
                 }
@@ -1141,7 +1384,7 @@
               "folded": true,
               "name": "Need",
               "type": "string",
-              "value": "banana"
+              "value": ""
             },
             {
               "name": "Health",
@@ -1282,7 +1525,7 @@
           "assetStoreId": "",
           "bold": false,
           "italic": false,
-          "name": "Text1",
+          "name": "RoundTimer",
           "smoothed": true,
           "tags": "",
           "type": "TextObject::Text",
@@ -1329,7 +1572,10 @@
           "effects": [],
           "behaviors": [
             {
-              "acceleration": 130,
+              "acceleration": 60,
+              "maxSpeed": 60,
+              "name": "Pathfinding",
+              "type": "PathfindingBehavior::PathfindingBehavior",
               "allowDiagonals": true,
               "angleOffset": 0,
               "angularMaxSpeed": 180,
@@ -1338,25 +1584,23 @@
               "extraBorder": 0,
               "gridOffsetX": 0,
               "gridOffsetY": 0,
-              "maxSpeed": 130,
-              "name": "Pathfinding",
               "rotateObject": false,
-              "smoothingMaxCellGap": 1,
-              "type": "PathfindingBehavior::PathfindingBehavior"
+              "smoothingMaxCellGap": 1
             }
           ],
           "animations": [
             {
-              "name": "",
+              "name": "Chasing",
               "useMultipleDirections": false,
               "directions": [
                 {
-                  "looping": false,
-                  "timeBetweenFrames": 0.08,
+                  "looping": true,
+                  "metadata": "{\"pskl\":{}}",
+                  "timeBetweenFrames": 0.2,
                   "sprites": [
                     {
-                      "hasCustomCollisionMask": false,
-                      "image": "assets\\Ana.png",
+                      "hasCustomCollisionMask": true,
+                      "image": "assets\\assets_New Characters_Townfolk-Adult-M.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -1369,7 +1613,147 @@
                         "x": 0,
                         "y": 0
                       },
-                      "customCollisionMask": []
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 7,
+                            "y": 7
+                          },
+                          {
+                            "x": 17,
+                            "y": 7
+                          },
+                          {
+                            "x": 17,
+                            "y": 32
+                          },
+                          {
+                            "x": 7,
+                            "y": 32
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets\\assets_New Characters_Townfolk-Adult-M3.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 7,
+                            "y": 7
+                          },
+                          {
+                            "x": 17,
+                            "y": 7
+                          },
+                          {
+                            "x": 17,
+                            "y": 32
+                          },
+                          {
+                            "x": 7,
+                            "y": 32
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "Chasing Left",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": true,
+                  "metadata": "{\"pskl\":{}}",
+                  "timeBetweenFrames": 0.2,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "Chasing Left",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 7,
+                            "y": 7
+                          },
+                          {
+                            "x": 17,
+                            "y": 7
+                          },
+                          {
+                            "x": 17,
+                            "y": 32
+                          },
+                          {
+                            "x": 7,
+                            "y": 32
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "Chasing Left2",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 7,
+                            "y": 7
+                          },
+                          {
+                            "x": 17,
+                            "y": 7
+                          },
+                          {
+                            "x": 17,
+                            "y": 32
+                          },
+                          {
+                            "x": 7,
+                            "y": 32
+                          }
+                        ]
+                      ]
                     }
                   ]
                 }
@@ -1478,7 +1862,7 @@
             "textG": 0,
             "textR": 0
           },
-          "comment": "Timer"
+          "comment": "round timer"
         },
         {
           "type": "BuiltinCommonInstructions::Standard",
@@ -1516,6 +1900,18 @@
           ],
           "events": [
             {
+              "type": "BuiltinCommonInstructions::Comment",
+              "color": {
+                "b": 109,
+                "g": 230,
+                "r": 255,
+                "textB": 0,
+                "textG": 0,
+                "textR": 0
+              },
+              "comment": "choose customer need"
+            },
+            {
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
@@ -1531,6 +1927,17 @@
                 }
               ],
               "actions": [
+                {
+                  "type": {
+                    "value": "ModVarObjetTxt"
+                  },
+                  "parameters": [
+                    "Ana",
+                    "Need",
+                    "=",
+                    "\"Apple\""
+                  ]
+                },
                 {
                   "type": {
                     "value": "Create"
@@ -1582,6 +1989,17 @@
               "actions": [
                 {
                   "type": {
+                    "value": "ModVarObjetTxt"
+                  },
+                  "parameters": [
+                    "Ana",
+                    "Need",
+                    "=",
+                    "\"Banana\""
+                  ]
+                },
+                {
+                  "type": {
                     "value": "Create"
                   },
                   "parameters": [
@@ -1625,7 +2043,7 @@
             "textG": 0,
             "textR": 0
           },
-          "comment": "Player movement"
+          "comment": "player movement animation"
         },
         {
           "type": "BuiltinCommonInstructions::Standard",
@@ -1754,6 +2172,158 @@
           ]
         },
         {
+          "type": "BuiltinCommonInstructions::Comment",
+          "color": {
+            "b": 109,
+            "g": 230,
+            "r": 255,
+            "textB": 0,
+            "textG": 0,
+            "textR": 0
+          },
+          "comment": "item pickup behaviour"
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::And"
+              },
+              "parameters": [],
+              "subInstructions": [
+                {
+                  "type": {
+                    "value": "CollisionNP"
+                  },
+                  "parameters": [
+                    "Player",
+                    "Apple",
+                    "",
+                    "",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "VarObjetTxt"
+                  },
+                  "parameters": [
+                    "Player",
+                    "currentHoldingObject",
+                    "=",
+                    "\"Banana\""
+                  ]
+                }
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Delete"
+              },
+              "parameters": [
+                "Banana",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "MettreXY"
+              },
+              "parameters": [
+                "Apple",
+                "=",
+                "Player.X(\"PickUpPoint\") + 45",
+                "=",
+                "Player.Y(\"PickUpPoint\") + 40"
+              ]
+            },
+            {
+              "type": {
+                "value": "ModVarObjetTxt"
+              },
+              "parameters": [
+                "Player",
+                "currentHoldingObject",
+                "=",
+                "\"Apple\""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::And"
+              },
+              "parameters": [],
+              "subInstructions": [
+                {
+                  "type": {
+                    "value": "CollisionNP"
+                  },
+                  "parameters": [
+                    "Player",
+                    "Banana",
+                    "",
+                    "",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "VarObjetTxt"
+                  },
+                  "parameters": [
+                    "Player",
+                    "currentHoldingObject",
+                    "=",
+                    "\"Apple\""
+                  ]
+                }
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Delete"
+              },
+              "parameters": [
+                "Apple",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "MettreXY"
+              },
+              "parameters": [
+                "Banana",
+                "=",
+                "Player.X(\"PickUpPoint\") + 45",
+                "=",
+                "Player.Y(\"PickUpPoint\") + 40"
+              ]
+            },
+            {
+              "type": {
+                "value": "ModVarObjetTxt"
+              },
+              "parameters": [
+                "Player",
+                "currentHoldingObject",
+                "=",
+                "\"Banana\""
+              ]
+            }
+          ]
+        },
+        {
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -1779,7 +2349,7 @@
                 "=",
                 "Player.X(\"PickUpPoint\") + 45",
                 "=",
-                "Player.Y(\"PickUpPoint\") + 40"
+                "Player.Y(\"PickUpPoint\") + 45"
               ]
             },
             {
@@ -1790,7 +2360,7 @@
                 "Player",
                 "currentHoldingObject",
                 "=",
-                "\"apple\""
+                "\"Apple\""
               ]
             }
           ]
@@ -1832,10 +2402,22 @@
                 "Player",
                 "currentHoldingObject",
                 "=",
-                "\"apple\""
+                "\"Banana\""
               ]
             }
           ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Comment",
+          "color": {
+            "b": 109,
+            "g": 230,
+            "r": 255,
+            "textB": 0,
+            "textG": 0,
+            "textR": 0
+          },
+          "comment": "item handoff to client"
         },
         {
           "type": "BuiltinCommonInstructions::Standard",
@@ -1854,7 +2436,7 @@
                     "Ana",
                     "Need",
                     "=",
-                    "\"apple\""
+                    "\"Apple\""
                   ]
                 },
                 {
@@ -1901,7 +2483,7 @@
                     "Ana",
                     "Need",
                     "=",
-                    "\"banana\""
+                    "\"Banana\""
                   ]
                 },
                 {
@@ -1941,7 +2523,7 @@
             "textG": 0,
             "textR": 0
           },
-          "comment": "Healthbar"
+          "comment": "client healthbar"
         },
         {
           "type": "BuiltinCommonInstructions::Standard",
@@ -1993,7 +2575,7 @@
                 "value": "TextObject::String"
               },
               "parameters": [
-                "Text1",
+                "RoundTimer",
                 "=",
                 "ToString(Player.Variable(Time))"
               ]
@@ -2051,7 +2633,7 @@
             "textG": 0,
             "textR": 0
           },
-          "comment": "Robber"
+          "comment": "robber movements"
         },
         {
           "type": "BuiltinCommonInstructions::Standard",
@@ -2136,6 +2718,70 @@
                 "TopDownMovement",
                 "=",
                 "200"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Comment",
+          "color": {
+            "b": 109,
+            "g": 230,
+            "r": 255,
+            "textB": 0,
+            "textG": 0,
+            "textR": 0
+          },
+          "comment": "robber chasing animation"
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "PosX"
+              },
+              "parameters": [
+                "Robber",
+                ">",
+                "Player.X()"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetAnimationName"
+              },
+              "parameters": [
+                "Robber",
+                "\"Chasing Left\""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "PosX"
+              },
+              "parameters": [
+                "Robber",
+                "<",
+                "Player.X()"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetAnimationName"
+              },
+              "parameters": [
+                "Robber",
+                "\"Chasing\""
               ]
             }
           ]
