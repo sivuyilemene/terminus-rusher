@@ -538,6 +538,60 @@
         "name": "assets\\SpawnPoint.png",
         "smoothed": false,
         "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/New Characters/Townfolk-Adult-M.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\New Characters\\Townfolk-Adult-M.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/assets_New Characters_Townfolk-Adult-M.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "assets\\New Characters\\Townfolk-Adult-M",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/assets_New Characters_Townfolk-Adult-M2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "assets\\New Characters\\Townfolk-Adult-M2",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/assets_New Characters_Townfolk-Adult-M3.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "assets\\New Characters\\Townfolk-Adult-M3",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/assets_New Characters_Townfolk-Adult-M.png",
+        "kind": "image",
+        "metadata": "{\"localFilePath\":\"assets/assets_New Characters_Townfolk-Adult-M.png\",\"extension\":\".png\"}",
+        "name": "assets\\assets_New Characters_Townfolk-Adult-M.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/assets_New Characters_Townfolk-Adult-M3.png",
+        "kind": "image",
+        "metadata": "{\"localFilePath\":\"assets/assets_New Characters_Townfolk-Adult-M3.png\",\"extension\":\".png\"}",
+        "name": "assets\\assets_New Characters_Townfolk-Adult-M3.png",
+        "smoothed": false,
+        "userAdded": true
       }
     ],
     "resourceFolders": []
@@ -694,21 +748,6 @@
         },
         {
           "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "layer": "",
-          "name": "Robber",
-          "persistentUuid": "357c87fb-a593-4950-8ce5-9bf67f7ce5b5",
-          "width": 0,
-          "x": 179,
-          "y": 342,
-          "zOrder": 20,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
           "customSize": true,
           "height": 80,
           "layer": "",
@@ -733,6 +772,51 @@
           "x": 754,
           "y": 498,
           "zOrder": 22,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "Banana",
+          "persistentUuid": "8456acc1-0150-448b-8074-081ac3925c81",
+          "width": 0,
+          "x": 697,
+          "y": 141,
+          "zOrder": 23,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "Banana",
+          "persistentUuid": "31b1e426-c487-4cf8-9408-e198dadb1a01",
+          "width": 0,
+          "x": 320,
+          "y": 199,
+          "zOrder": 24,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "Apple",
+          "persistentUuid": "39cf6690-9a0b-4757-beee-ecf1b43f4f1e",
+          "width": 0,
+          "x": 1083,
+          "y": 204,
+          "zOrder": 25,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -792,7 +876,7 @@
               "folded": true,
               "name": "currentHoldingObject",
               "type": "string",
-              "value": ""
+              "value": "Nothing"
             },
             {
               "folded": true,
@@ -1347,16 +1431,80 @@
           ],
           "animations": [
             {
-              "name": "",
+              "name": "Chasing",
               "useMultipleDirections": false,
               "directions": [
                 {
-                  "looping": false,
-                  "timeBetweenFrames": 0.08,
+                  "looping": true,
+                  "metadata": "{\"pskl\":{}}",
+                  "timeBetweenFrames": 0.2,
                   "sprites": [
                     {
                       "hasCustomCollisionMask": false,
-                      "image": "assets\\Ana.png",
+                      "image": "assets\\assets_New Characters_Townfolk-Adult-M.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    },
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "assets\\assets_New Characters_Townfolk-Adult-M3.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "Chasing Left",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": true,
+                  "timeBetweenFrames": 0.2,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "assets\\assets_New Characters_Townfolk-Adult-M.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    },
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "assets\\assets_New Characters_Townfolk-Adult-M3.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -2139,6 +2287,63 @@
               ]
             }
           ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "PosX"
+              },
+              "parameters": [
+                "Robber",
+                ">",
+                "Player.X()"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetAnimationName"
+              },
+              "parameters": [
+                "Robber",
+                "\"Chasing Left\""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "PosX"
+              },
+              "parameters": [
+                "Robber",
+                "<",
+                "Player.X()"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetAnimationName"
+              },
+              "parameters": [
+                "Robber",
+                "\"Chasing\""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": []
         }
       ],
       "layers": [
